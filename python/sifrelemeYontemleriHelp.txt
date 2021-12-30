@@ -1,0 +1,22 @@
+sifrelemeYontemleri() class' ı ;
+--------------------------------
+ 
+	+ Class da 8 farklı şifreleme fonksiyonu bulunmaktadır.
+        + Bu fonksiyonların çalışması için [pip] modülü eklenmiştir.
+        + Bunlar : sha256Hash(),sha512Hash(),sha224Hash(),sha384Hash(),sha1Hash(),md5Hash(),AesHash(),DesHash() fonksiyonlarıdır. 
+	+ Artı olarak constructor bulunmaktadır.
+        + sha256Hash(),sha512Hash(),sha224Hash(),sha384Hash(),sha1Hash(),md5Hash() fonksiyonları value parametresini almaktadır ve 
+	  şifreli mesaj return etmektedir.
+
+        + AesHash() : 
+        	+ 1- Cryptodome.Cipher ve Cryptodome.Random kütüphanemizi/modülleri import edilmiştir.
+        	+ 2- Veri tanımlanır . Veriler bayt biçiminde olmalıdır, b”veriler” şeklinde olmalıdır.
+        	+ 3- get_random_bytes , x uzunluğunda rastgele bir bayt dizesi döndürmektedir. 
+		+ 4- x , 16 bayttır (128 bit). Bu anahtarı ifade etmektedir.
+        	+ 5- Şifreli metni oluşturmak için AES.new() kullanılmaktadır.
+        	+ 6- encrypt_and_digest() şifreleme ve özet işlemlerini gerçekleştirir.
+
+	+ DesHash() : 
+        	+ 1- (token_bytes, DES) import işlemleri yapıldı.
+        	+ 2- data parametresini almaktadır. Key class'ın constructornda atanmaktadır.
+        	+ 3- geriye şifreli metni döndürmektedir.

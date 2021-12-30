@@ -1,0 +1,26 @@
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+dilKontrol() class'ı ;
+--------------------------
+
+cumleBul(self): Fonksiyonunda metin cümle sonundaki noktalara göre cümlelere ayrılmaktadır.Ve bulunan cumlelerin listesini döndürmektedir.
+
+
+cumleSayi(self,cumle) :Parametre olarak aldığı listesinin uzunluğunu return ederek metindeki cümle sayısını bulmaktadır.
+
+
+kelimeBul(self,cumle): Gelen cumlelerin içindeki kelimeleri boşluklara göre ayırarak kelime listesi döndürmektedir.
+
+
+kelimeSayi(self,kelime): Parametre olarak aldığı kelime listesinin uzunluğunu return ederek metindeki kelime sayısını bulmaktadır.
+
+
+sesliHarfBul(self,metin): Class içersinde tanımlanmış [sesliHarfler] değişkeninden yararlanarak parametre olarak aldığı metnin içinde sesliharf sorgulaması yapmaktadır.
+
+if bloğu sayesinde her sesli harf bulunduğunda sesliHarfSayi 1 arttırılır ve toplam sesliHarfSayi değeri return ettirilir.
+buyukUnluUyumuKontrol(self,kelimeler): Parametre olarak kelime listesini almaktadır. Tek heceli kelimeler büyük ünlü uyumu-
+na uymaz bu nedenle sesliHarfBul(self,metin) fonksiyonundan yararlanarak kelimenin tek heceli olup olmadığının kontrolü yap-
+tırılır. Eğer koşul sağlanıyorsa diğer koşullar ile class içerisinde tanımlanmış olan [inceHarfler] ve [kalinHarfler] de-
+ğişkenlerinden yararlanılarak. kelimenin harflerinin ince veya kalın olduğu kontrol ettirilir.[kontrolKalin=False] 
+[kontrolInce=False] şeklinde tanımlanmış değişkenlerin ikiside true sonuç verir ise büyük ünlü uyumu yoktur.Bu class ge-
+riye büyük ünlü uyumuna uyan ve uymayan kelime sayılarını döndürür.
